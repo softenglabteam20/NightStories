@@ -181,6 +181,16 @@
 	 <script type="text/javascript" src="platforms\android\platform_www\cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script>document.addEventListener("deviceready", onDeviceReady, false);
+                document.addEventListener("backbutton", onBackKeyDown, false);
+
+                function onBackKeyDown() {
+                          navigator.notification.confirm(
+                     'You are the winner!', // message
+                     onConfirm,            // callback to invoke with index of button pressed
+                    'Game Over',           // title
+                      ['Restart','Exit']     // buttonLabels
+                    );
+                    }
 		
 			function onDeviceReady(){
 				//alert("ready");
@@ -190,7 +200,12 @@
 		    function exitApp(){
 		    navigator.app.exitApp();
 		    }
-		
+
+		function onConfirm(buttonIndex) {
+                alert('You selected button ' + buttonIndex);
+                }
+
+
 		
 		</script>
 </body>
