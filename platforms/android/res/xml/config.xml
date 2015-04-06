@@ -7,6 +7,9 @@
     <feature name="Compass">
         <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
     </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
     <name>Night Stories - New Orleans</name>
     <description>
       Game
@@ -17,7 +20,4 @@
     <preference name="Orientation" value="landscape" />
     <content src="index.html" />
     <access origin="*" />
-    <feature name="Notification">
-        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-    </feature>
 </widget>
