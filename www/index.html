@@ -163,7 +163,7 @@
 					</p>
 				</div>
 			</div>
-		<a class="links"  type="button" onclick="location.href='https://www.google.gr/'"><img src="img/exit.png" class="imageexit"></a>
+		<a class="links"  type="button" onclick="exitApp()"><img src="img/exit.png" class="imageexit"></a>
 		<div id="openModal3" class="modalDialog3"> <!-- confirm to reset data for new game -->
 			<div>
 				<p>
@@ -183,9 +183,13 @@
 		<script>document.addEventListener("deviceready", onDeviceReady, false);
 		
 			function onDeviceReady(){
-				alert("ready");
+				//alert("ready");
 
-		}		
+		}
+
+		    function exitApp(){
+		    navigator.app.exitApp();
+		    }
 		
 		
 		</script>
