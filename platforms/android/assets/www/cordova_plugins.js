@@ -48,28 +48,13 @@ module.exports = [
         "clobbers": [
             "navigator.compass"
         ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
-        "id": "org.apache.cordova.dialogs.notification",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.dialogs/www/android/notification.js",
-        "id": "org.apache.cordova.dialogs.notification_android",
-        "merges": [
-            "navigator.notification"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "org.apache.cordova.camera": "0.3.6",
-    "org.apache.cordova.device-orientation": "0.3.11",
-    "org.apache.cordova.dialogs": "0.3.0"
+    "org.apache.cordova.device-orientation": "0.3.11"
 }
 // BOTTOM OF METADATA
 });
