@@ -10,11 +10,5 @@
             "type": "registry",
             "id": "org.apache.cordova.device-orientation"
         }
-    },
-    "org.apache.cordova.dialogs": {
-        "source": {
-            "type": "registry",
-            "id": "org.apache.cordova.dialogs"
-        }
     }
 }
